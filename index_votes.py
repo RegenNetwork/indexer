@@ -22,7 +22,7 @@ def fetch_votes_by_proposal(height, proposal_id):
     # Eventually EventVote may contain proposal id and voter address
     # At which point we could get the vote with this endpoint:
     # /cosmos/group/v1/vote_by_proposal_voter/{proposal_id}/{voter}
-    # Ref: https://github.com/regen-network/indexer/pull/38#discussion_r1310958235
+    # Ref: https://github.com/RegenNetwork/indexer/pull/38#discussion_r1310958235
     resp = requests.get(
         f"{os.environ['REGEN_API']}/cosmos/group/v1/votes_by_proposal/{proposal_id}",
         headers=headers,

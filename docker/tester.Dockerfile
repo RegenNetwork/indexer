@@ -19,7 +19,7 @@ ENV TEST_POLICY_ADDRESS_1=regen1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vz
 ENV REGEN_TX_FLAGS="--keyring-backend test --chain-id regen-local --yes"
 
 # Clone regen ledger
-RUN git clone https://github.com/regen-network/regen-ledger/ /home/tester
+RUN git clone https://github.com/RegenNetwork/regen-ledger/ /home/tester
 
 # Set working directory
 WORKDIR /home/tester
